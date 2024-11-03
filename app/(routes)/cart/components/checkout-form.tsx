@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import axios from "axios";
 import { Button } from "@/components/ui/button";
 import {
@@ -61,6 +61,7 @@ const formSchema = z.object({
 });
 
 export const CheckoutForm = ({ items }: any) => {
+  const [loading, setLoading] = useState(false)
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -95,6 +96,7 @@ export const CheckoutForm = ({ items }: any) => {
   );
 
   const makePayment = async (values: z.infer<typeof formSchema>) => {
+ 
     const res = await initializeRazorpay();
 
     if (!res) {
@@ -151,16 +153,19 @@ export const CheckoutForm = ({ items }: any) => {
 
     const paymentObject = new (window as any).Razorpay(options);
     paymentObject.open();
+    return 1
   };
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      console.log("values: ", values);
-      makePayment(values);
+      setLoading(true)
+      await makePayment(values);
       form.reset()
     } catch (error) {
       console.error("Checkout error:", error);
       toast.error("An error occurred");
+    } finally {
+      setLoading(false)
     }
   };
 
@@ -288,7 +293,7 @@ export const CheckoutForm = ({ items }: any) => {
             <Button
               type="submit"
               className="w-full rounded-md px-4 py-2 text-center text-background"
-              disabled={form.formState.isSubmitting || items.length === 0}
+              disabled={loading || form.formState.isSubmitting || items.length === 0}
             >
               {form.formState.isSubmitting ? (
                 <div className="flex flex-row items-center gap-2">

@@ -8,7 +8,7 @@ export const revalidate = 0;
 
 const Home = async () => {
   const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboard("671132c815686e9e8d588f1b");
+  const billboard = await getBillboard(process.env.HOMEPAGE_BILLBOARD!);
 
   return (
     <div className="mx-auto max-w-7xl">
