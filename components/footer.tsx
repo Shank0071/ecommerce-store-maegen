@@ -69,7 +69,7 @@ function Footer() {
                 Mobile:{" "}
                 <Link
                   className="hover:text-blue-900 transition-colors"
-                  href="tel:9994446822"
+                  href="tel:9894037570"
                 >
                   +91 9894037570
                 </Link>{" "}
