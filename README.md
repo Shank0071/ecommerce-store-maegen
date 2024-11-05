@@ -15,7 +15,12 @@ Ecommerce frontend powered by custom CMS solution
 - DUMMY UPI -> ok@hdfc
 
 ```bash
-hello
+.env
+
+NEXT_PUBLIC_API_URL=
+RAZORPAY_SECRET=
+RAZORPAY_KEY=
+HOMEPAGE_BILLBOARD=
 ```
 
 ### TODOS
