@@ -14,9 +14,9 @@ Ecommerce frontend powered by custom CMS solution
 ## Test Payments
 - DUMMY UPI -> ok@hdfc
 
-```bash
-.env
 
+## .env 
+```bash
 NEXT_PUBLIC_API_URL=
 RAZORPAY_SECRET=
 RAZORPAY_KEY=
@@ -24,7 +24,7 @@ HOMEPAGE_BILLBOARD=
 ```
 
 ### TODOS
-- Accept live payments (expected after KYC within a month)
+- Accept live payments
 - Order Tracking based on Order ID
 
 ### Credits: codewithantonio
