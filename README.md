@@ -1,7 +1,7 @@
-## Maegen
+# Maegen
 Ecommerce frontend powered by custom CMS solution
 
-# Tech Stack
+## Tech Stack
 - Nextjs
 - Razorpay
 - Shadcnui
