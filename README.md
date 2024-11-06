@@ -23,9 +23,13 @@ RAZORPAY_KEY=
 HOMEPAGE_BILLBOARD=
 ```
 
+### DEPLOYEDDDD !!!
+
 ### TODOS
 - Accept live payments
 - Order Tracking based on Order ID
+
+
 
 ### Credits: codewithantonio
 
