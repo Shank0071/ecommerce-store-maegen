@@ -23,7 +23,6 @@ RAZORPAY_KEY=
 HOMEPAGE_BILLBOARD=
 ```
 
-### DEPLOYEDDDD !!!
 
 ### TODOS
 - Accept live payments
