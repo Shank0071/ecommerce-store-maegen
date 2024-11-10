@@ -59,20 +59,11 @@ function Footer() {
                 Mobile:{" "}
                 <Link
                   className="hover:text-blue-900 transition-colors"
-                  href="tel:9894712950"
+                  href="tel:9092525099"
                 >
-                  +91 9894712950
+                  +91 9092525099
                 </Link>{" "}
                 <span className="hidden md:inline-block">(Primary)</span>
-              </li>
-              <li>
-                Mobile:{" "}
-                <Link
-                  className="hover:text-blue-900 transition-colors"
-                  href="tel:9894037570"
-                >
-                  +91 9894037570
-                </Link>{" "}
               </li>
             </ul>
           </div>
@@ -80,10 +71,10 @@ function Footer() {
           <div className="p-4">
             <h3 className="font-bold text-xl my-1">Socials</h3>
             <div className="flex gap-1 ">
-              <Link href="#">
+              <Link href="https://www.instagram.com/maegen.sarees?igsh=ZXJpYWgydGR2d3Zk">
                 <img className="h-6 w-6" src="/instagram.svg" alt="instagram" />
               </Link>
-              <Link href="#">
+              <Link href="mailto:maegensarees@gmail.com">
                 <Mail className="h-6 w-6" />
               </Link>
             </div>
