@@ -18,6 +18,7 @@ const PreviewModal = () => {
     <Modal 
       open={previewModal.isOpen} 
       onClose={previewModal.onClose}
+
     >
       <div className="flex flex-col md:flex-row gap-4 p-4">
         <div className="sm:col-span-4 lg:col-span-5">

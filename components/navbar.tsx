@@ -8,7 +8,7 @@ import { MobileNav } from "./mobile-nav";
 async function Navbar() {
   const categories = await getCategories();
   return (
-    <div className="border-b fixed top-0 z-50 text-slate-800 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div className="border-b fixed top-0 z-20 text-slate-800 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Container>
         <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
           <div className="md:hidden">
